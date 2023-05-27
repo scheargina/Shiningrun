@@ -131,12 +131,12 @@ class Play extends Phaser.Scene {
     }
 
 
-    checkCollision(maomao, zhangai) {
+    checkCollision(car, zhangai) {
       
-      if (maomao.x < zhangai.x + zhangai.width -8 && 
-        maomao.x + maomao.width > zhangai.x + 8 && 
-        maomao.y < zhangai.y + zhangai.height &&
-        maomao.height + maomao.y > zhangai.y + 16) {
+      if (car.x < zhangai.x + zhangai.width /2 && 
+        car.x + car.width > zhangai.x + 8 && 
+        car.y < zhangai.y + zhangai.height &&
+        car.height + car.y > zhangai.y + 16) {
         return true;
       } else {
         return false;
